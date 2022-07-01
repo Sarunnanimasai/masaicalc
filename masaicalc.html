@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: teal;
+      }
+      #calc {
+        width: 45%;
+        height: 550px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: auto;
+        padding-top: 40px;
+      }
+      #display {
+        width: 85%;
+        height: 10%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #keyboard {
+        width: 85%;
+        height: 80%;
+        margin: auto;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        gap: 10px;
+      }
+      #keyboard > div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Masai Calculator</h1>
+    <div id="calc">
+      <div id="display"></div>
+      <div id="keyboard">
+        <div id="1">1</div>
+        <div id="2">2</div>
+        <div id="3">3</div>
+        <div id="+">+</div>
+        <div id="4">4</div>
+        <div id="5">5</div>
+        <div id="6">6</div>
+        <div id="-">-</div>
+        <div id="7">7</div>
+        <div id="8">8</div>
+        <div id="9">9</div>
+        <div id="X">X</div>
+        <div id="C">C</div>
+        <div id="0">0</div>
+        <div id="=">=</div>
+        <div id="/">/</div>
+      </div>
+    </div>
+  </body>
+</html>
